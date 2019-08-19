@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/fragment_home"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!-- https://github.com/jakob-grabner/Circle-Progress-View -->
+    <at.grabner.circleprogress.CircleProgressView
+        android:id="@+id/circle_progress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/circle_progress_top_margin"
+        android:layout_width="@dimen/circle_progress_width"
+        android:layout_height="@dimen/circle_progress_height"
+        CircleProgressView:cpv_autoTextSize="true"
+        CircleProgressView:cpv_autoTextColor="true"
+        CircleProgressView:cpv_fillColor="@color/circle_progress_fill_color"
+        CircleProgressView:cpv_barColor="@color/circle_progress_bar_color1"
+        CircleProgressView:cpv_barColor1="@color/circle_progress_bar_color2"
+        CircleProgressView:cpv_barColor2="@color/circle_progress_bar_color3"
+        CircleProgressView:cpv_barColor3="@color/circle_progress_bar_color4"
+        CircleProgressView:cpv_barWidth="35dp"
+        CircleProgressView:cpv_innerContourSize="0dp"
+        CircleProgressView:cpv_maxValue="100"
+        CircleProgressView:cpv_outerContourSize="0dp"
+        CircleProgressView:cpv_rimColor="@color/circle_progress_rim_color"
+        CircleProgressView:cpv_rimWidth="35dp"
+        CircleProgressView:cpv_seekMode="true"
+        CircleProgressView:cpv_showUnit="true"
+        CircleProgressView:cpv_textScale="1"
+        CircleProgressView:cpv_unit="%"
+        CircleProgressView:cpv_unitPosition="right_top"
+        CircleProgressView:cpv_unitScale="1"
+        CircleProgressView:cpv_value="10"
+        CircleProgressView:cpv_barStrokeCap="Butt"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+</RelativeLayout>

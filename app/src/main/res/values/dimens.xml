@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Circle Progress View-->
+    <dimen name="circle_progress_height">300dp</dimen>
+    <dimen name="circle_progress_width">300dp</dimen>
+    <dimen name="circle_progress_top_margin">100dp</dimen>
+    <dimen name="circle_progress_rim_bar_width">30dp</dimen>
+    <dimen name="circle_progress_contour_size">0dp</dimen>
+
+    <!--Icon-->
+    <dimen name="icon_left_right_padding">10dp</dimen>
+
+    <!--Line-->
+    <dimen name="line_height">2dp</dimen>
+</resources>

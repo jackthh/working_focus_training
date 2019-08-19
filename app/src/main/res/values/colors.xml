@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#123</color>
+    <color name="colorPrimaryDark">#123</color>
+    <color name="colorAccent">#123</color>
+
+    <!--Circle Progress Bar-->
+    <color name="circle_progress_rim_color">#6055595a</color>
+    <color name="circle_progress_fill_color">#20b1b4b5</color>
+    <color name="circle_progress_bar_color1">#D045b8e9</color>
+    <color name="circle_progress_bar_color2">#D05fb9c4</color>
+    <color name="circle_progress_bar_color3">#D0d2e46a</color>
+    <color name="circle_progress_bar_color4">#D0ccea32</color>
+    <color name="circle_progress_invisible_color">#0000</color>
+
+    <color name="black">#D0000000</color>
+    <color name="white">#D0FFFFFF</color>
+    <color name="grey">#D0191919</color>
+    <color name="grey_light">#D0515149</color>
+    <color name="blue">#D01895C7</color>
+
 </resources>
+

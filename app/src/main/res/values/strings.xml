@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Working_Focus</string>
+    <string name="app_name">Working Focus</string>
+
+    <!--Bottom Navigation-->
+    <string name="home_tab_name">Home</string>
+    <string name="music_tab_name">Music</string>
+    <string name="search_tab_name">Search</string>
 </resources>
