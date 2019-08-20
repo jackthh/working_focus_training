@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/item_sound_image"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/icon_margin_5dp"
+        android:src="@drawable/ic_sound_drizzle" />
+    <TextView
+        android:id="@+id/item_sound_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_sound_image"
+        android:layout_centerHorizontal="true"
+        android:text="Tittle"
+        android:textColor="@color/grey_light"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</RelativeLayout>

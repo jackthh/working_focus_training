@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/fragment_home"
+<RelativeLayout android:id="@+id/fragment_home"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/tools">
 
 
 
@@ -39,9 +39,36 @@
         CircleProgressView:cpv_barStrokeCap="Butt"/>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/circle_progress"
+        android:layout_marginTop="@dimen/layout_top_margin"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/image_play_pause"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_margin="@dimen/icon_margin_10dp"
+            android:src="@drawable/selector_play_pause_toggle_button"/>
+        <ImageView
+            android:id="@+id/image_refresh"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_margin="@dimen/icon_margin_10dp"
+
+            android:src="@drawable/ic_playback_refresh"/>
+        <ImageView
+            android:id="@+id/image_mute"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_margin="@dimen/icon_margin_10dp"
+            android:src="@drawable/selector_mute_toggle_button"/>
 
     </LinearLayout>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_sound_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>
