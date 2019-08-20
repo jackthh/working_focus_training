@@ -31,16 +31,16 @@
                 android:id="@+id/image_button_1"
                 android:layout_marginLeft="@dimen/icon_margin_10dp"
                 android:layout_marginRight="@dimen/icon_margin_10dp"
-                android:layout_width="@dimen/icon_size"
-                android:layout_height="@dimen/icon_size"
+                android:layout_width="@dimen/icon_size_48dp"
+                android:layout_height="@dimen/icon_size_48dp"
                 android:background="@drawable/ic_tab_home"
                 android:layout_gravity="center_horizontal"/>
             <ImageButton
                 android:id="@+id/image_button_2"
                 android:layout_marginLeft="@dimen/icon_margin_10dp"
                 android:layout_marginRight="@dimen/icon_margin_10dp"
-                android:layout_width="@dimen/icon_size"
-                android:layout_height="@dimen/icon_size"
+                android:layout_width="@dimen/icon_size_48dp"
+                android:layout_height="@dimen/icon_size_48dp"
                 android:background="@drawable/ic_tab_search"
                 android:layout_gravity="center_horizontal"/>
         </LinearLayout>

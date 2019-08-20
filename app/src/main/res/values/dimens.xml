@@ -10,8 +10,11 @@
     <!--Icon-->
     <dimen name="icon_margin_10dp">10dp</dimen>
     <dimen name="icon_margin_5dp">5dp</dimen>
-    <dimen name="button_icon_size">72dp</dimen>
-    <dimen name="icon_size">48dp</dimen>
+    <dimen name="button_icon_size_72dp">72dp</dimen>
+    <dimen name="icon_size_48dp">48dp</dimen>
+    <dimen name="icon_size_36dp">36dp</dimen>
+    <dimen name="icon_text_size_10dp">10dp</dimen>
+    <dimen name="icon_line_number">2</dimen>
 
     <!--Line-->
     <dimen name="line_height">3dp</dimen>

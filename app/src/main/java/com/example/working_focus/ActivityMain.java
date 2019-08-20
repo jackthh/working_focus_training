@@ -1,7 +1,9 @@
 package com.example.working_focus;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentActivity;
@@ -11,7 +13,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import at.grabner.circleprogress.CircleProgressView;
 
-public class ActivityMain extends FragmentActivity {
+public class ActivityMain extends FragmentActivity implements MainContract.View{
+    MainContract.Presenter mPresenter;
     private CircleProgressView mCircleProgressView;
     private ViewPager mViewPager;
     private BottomNavigationView mBottomNavigationView;
@@ -83,5 +86,38 @@ public class ActivityMain extends FragmentActivity {
         // Make default tab
         mViewPager.setCurrentItem(0);
 
+        mPresenter.checkPermission();
+        mPresenter.checkStorage();
+        /*End of onCreate*/
+    }
+
+
+    @Override
+    public Activity getActivity() {
+        return this;
+    }
+
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        mPresenter.onPermissionResult(requestCode, permissions, grantResults);
+    }
+
+
+    @Override
+    public boolean showRationale(String permission) {
+        return this.shouldShowRequestPermissionRationale(permission);
+    }
+
+
+    @Override
+    public void showPermissionRequestExplaination() {
+        Toast.makeText(this, "Reading external storage is needed to run the app", Toast.LENGTH_SHORT).show();
+    }
+
+
+    @Override
+    public void setPresenter(MainContract.Presenter presenter) {
+        mPresenter = presenter;
     }
 }
